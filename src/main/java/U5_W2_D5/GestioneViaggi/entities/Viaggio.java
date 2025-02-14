@@ -2,10 +2,7 @@ package U5_W2_D5.GestioneViaggi.entities;
 
 import U5_W2_D5.GestioneViaggi.Stato.StatoViaggio;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.Date;
 
@@ -34,4 +31,7 @@ public class Viaggio {
     @Column(name = "stato_viaggio")
     private StatoViaggio statoViaggio;
 
+    public String getEmail() {
+        return "";
+    }
 }
